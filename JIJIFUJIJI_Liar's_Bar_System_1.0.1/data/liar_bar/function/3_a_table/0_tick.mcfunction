@@ -1,11 +1,18 @@
 #a桌主函数
-say a
+
 
 
 scoreboard players add liar_bar_a_table_tick jijifujiji_liar_bar_variable 1
 #给tick+1
 execute if score liar_bar_a_table_tick jijifujiji_liar_bar_variable matches 20.. run function liar_bar:3_a_table/0.1_sec
 #如果tick函数到了20以上就运行
+
+
+
+
+
+
+
 
 
 

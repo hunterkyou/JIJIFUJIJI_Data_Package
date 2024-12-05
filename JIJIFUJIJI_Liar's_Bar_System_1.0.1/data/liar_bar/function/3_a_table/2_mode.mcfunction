@@ -1,12 +1,12 @@
 #开始游戏的按钮，这将用于后续的传参
 
 
+scoreboard players reset a_table_mode jijifujiji_liar_bar_variable
+#先设置模式为模式0
 
 #scoreboard players set a_table_mode jijifujiji_liar_bar_variable 1
 #a_table_mode jijifujiji_liar_bar_variable  1为赌命  2是赌饭团币 3是赌坤坤币  也象征着开始了活动
 #liar_bar_main_switch jijifujiji_liar_bar_variable 1  代表时间开始了
-scoreboard objectives add jijifujiji_liar_bar_a_table_click trigger ["A桌的按键检测"]
-#新建一个按键检测系统
 
 
 

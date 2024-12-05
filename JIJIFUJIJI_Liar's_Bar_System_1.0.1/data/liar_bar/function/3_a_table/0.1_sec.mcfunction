@@ -1,6 +1,6 @@
 #a每秒运行一次
 
-say 1秒
+
 
 scoreboard players set liar_bar_a_table_tick jijifujiji_liar_bar_variable 0
 #给tick归零
@@ -12,9 +12,14 @@ scoreboard players add liar_bar_a_table_time jijifujiji_liar_bar_variable 1
 
 #10秒时间选择 模式，如果没有就直接跳过
 #20秒加入游戏（如果4个人就直接跳过）
-#5秒发牌
-#5秒准备时间
-#
+#3秒发牌
+#30秒随机选一个玩家30秒出牌
+#30秒下一个玩家出牌或者开
+#3秒展示牌
+#5秒开枪
+#3秒发牌
+#继续30秒出牌，被开的玩家
+#30秒下一个玩家出牌或者开
 
 
 #如果主控为1，就开始每秒运算
