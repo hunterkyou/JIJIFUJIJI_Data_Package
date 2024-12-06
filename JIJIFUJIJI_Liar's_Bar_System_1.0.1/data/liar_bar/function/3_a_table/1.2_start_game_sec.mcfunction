@@ -1,19 +1,16 @@
-#a每秒运行一次
+#1阶段每秒一次
+scoreboard players set liar_bar_a_table_temp jijifujiji_liar_bar_variable 21
+#临时变量=21
+execute store result bossbar minecraft:jijifujiji_liar_bar_a_table_time value run scoreboard players operation liar_bar_a_table_temp jijifujiji_liar_bar_variable -= liar_bar_a_table_time jijifujiji_liar_bar_variable
+#21-time=temp  ，并录入
 
 
+bossbar set jijifujiji_liar_bar_a_table_time name [{"text":"请选择模式（任意玩家）    ","color":"yellow"},{"score":{"objective":"jijifujiji_liar_bar_variable","name":"liar_bar_a_table_temp"},"color":"gold","bold":true},{"text":"s","color":"gold"}]
+$bossbar set jijifujiji_liar_bar_a_table_time players @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18]
+#更新boss条初始状态
 
-scoreboard players set liar_bar_a_table_tick jijifujiji_liar_bar_variable 0
-#给tick归零
-
-
-
-scoreboard players add liar_bar_a_table_time jijifujiji_liar_bar_variable 1
-#增加一秒
-execute if score liar_bar_a_table_stage jijifujiji_liar_bar_variable matches 1 if score liar_bar_a_table_time jijifujiji_liar_bar_variable matches 1..21 run function liar_bar:3_a_table/1.2_start_game_sec with storage minecraft:jijifujiji_liat_bar a_table_position
-#一阶段秒函数
-execute if score liar_bar_a_table_stage jijifujiji_liar_bar_variable matches 2 if score liar_bar_a_table_time jijifujiji_liar_bar_variable matches 21..42 run function liar_bar:3_a_table/2.1_mode_sec with storage minecraft:jijifujiji_liat_bar a_table_position
-#2阶段秒函数
-
+execute if score liar_bar_a_table_time jijifujiji_liar_bar_variable matches 21 run function liar_bar:3_a_table/99_over_game
+#如果到了时间就结束
 
 
 
@@ -48,5 +45,3 @@ execute if score liar_bar_a_table_stage jijifujiji_liar_bar_variable matches 2 i
 #如果主控为1，就开始每秒运算
 #liar_bar_main_switch jijifujiji_liar_bar_variable 1
 #scoreboard objectives add jijifujiji_liar_bar_variable dummy ["骗子酒馆变量"]
-
-

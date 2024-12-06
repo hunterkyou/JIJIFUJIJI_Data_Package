@@ -3,7 +3,7 @@ tellraw @a [{"text": "item","color": "yellow"},{"text": "《骗子酒馆系统�
 
 
 scoreboard objectives add jijifujiji_liar_bar_variable dummy ["骗子酒馆变量"]
-
+#scoreboard players set jijifujiji_liar_bar_20 jijifujiji_liar_bar_variable 20
 
 
 

@@ -1,10 +1,10 @@
 #每刻调用
 
-execute if score a_table_mode jijifujiji_liar_bar_variable matches 1..3 run function liar_bar:3_a_table/0_tick
-execute if score b_table_mode jijifujiji_liar_bar_variable matches 1..3 run function liar_bar:3_b_table/0_tick
-execute if score c_table_mode jijifujiji_liar_bar_variable matches 1..3 run function liar_bar:3_c_table/0_tick
-execute if score d_table_mode jijifujiji_liar_bar_variable matches 1..3 run function liar_bar:3_d_table/0_tick
-execute if score e_table_mode jijifujiji_liar_bar_variable matches 1..3 run function liar_bar:3_e_table/0_tick
+execute if score a_table_mode jijifujiji_liar_bar_variable matches 1..3 run function liar_bar:3_a_table/0_tick with storage minecraft:jijifujiji_liat_bar a_table_position
+execute if score b_table_mode jijifujiji_liar_bar_variable matches 1..3 run function liar_bar:3_b_table/0_tick with storage minecraft:jijifujiji_liat_bar b_table_position
+execute if score c_table_mode jijifujiji_liar_bar_variable matches 1..3 run function liar_bar:3_c_table/0_tick with storage minecraft:jijifujiji_liat_bar c_table_position
+execute if score d_table_mode jijifujiji_liar_bar_variable matches 1..3 run function liar_bar:3_d_table/0_tick with storage minecraft:jijifujiji_liat_bar d_table_position
+execute if score e_table_mode jijifujiji_liar_bar_variable matches 1..3 run function liar_bar:3_e_table/0_tick with storage minecraft:jijifujiji_liat_bar e_table_position
 #哪桌开了就开了
 
 
