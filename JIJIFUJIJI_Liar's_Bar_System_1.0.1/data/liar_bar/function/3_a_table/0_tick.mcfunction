@@ -8,6 +8,8 @@ execute if score liar_bar_a_table_tick jijifujiji_liar_bar_variable matches 20..
 #如果tick函数到了20以上就运行
 $execute as @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18,scores={jijifujiji_liar_bar_a_table_click=101..103}] if score liar_bar_a_table_stage jijifujiji_liar_bar_variable matches 1 run function liar_bar:3_a_table/2_mode with storage minecraft:jijifujiji_liat_bar a_table_position
 #检测按选择模式101赌命 、102饭团币、103坤坤币
+$execute as @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18,scores={jijifujiji_liar_bar_a_table_join=100}] if score liar_bar_a_table_stage jijifujiji_liar_bar_variable matches 2 run function liar_bar:3_a_table/3_join with storage minecraft:jijifujiji_liat_bar a_table_position
+#检测按加入游戏的玩家
 
 
 

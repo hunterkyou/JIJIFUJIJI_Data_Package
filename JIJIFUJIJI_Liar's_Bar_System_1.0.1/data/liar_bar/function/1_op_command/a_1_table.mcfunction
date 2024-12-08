@@ -13,6 +13,8 @@ function liar_bar:0_op
 
 
 
+
+
 #function liar_bar:1_op_command/a_table_generate with storage minecraft:jijifujiji_liat_bar a_table_position
 #
 
