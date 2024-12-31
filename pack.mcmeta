@@ -1,0 +1,19 @@
+{
+    "pack": {
+        "pack_format": 48,                                                      
+        "description": [                                                           
+          {
+            "text": "《骗子酒馆》",
+            "color": "green"
+          },
+          {
+            "text": "\n版本 v1",
+            "color": "blue"
+          },
+          {
+            "text": "\nby恶魔喵喵Kyou",
+            "color": "gold"
+          }
+        ]
+    }
+}
